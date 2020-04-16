@@ -1,2 +1,14 @@
 name: A workflow for my Hello World file
 On: push
+
+jobs:
+  build:
+    name: Hello World action
+    runs-on: ubuntu-latest
+    steps:
+      - uses actions/checkout@v1
+      - uses ./actions-a
+        - with:
+            MY_NAME: "Deepak"
+     
+ 
